@@ -31,97 +31,97 @@ def topLogin(data: list) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO登录系统 - " + main.fate_region,
-                "description": f"登录成功。列出角色信息.\n\n{messageBonus}",
+                "title": "FGO Daily Bonus - " + main.fate_region,
+                "description": f"Scheluded Login Fate/Grand Order.\n\n{messageBonus}",
                 "color": 563455,
                 "fields": [
                     {
-                        "name": "御主名",
+                        "name": "name",
                         "value": f"{name1}",
                         "inline": True
                     },
                     {
-                        "name": "朋友ID",
+                        "name": "Friend ID",
                         "value": f"{fpids1}",
                         "inline": True
                     },
                     {
-                        "name": "等级",
+                        "name": "Level",
                         "value": f"{rewards.level}",
                         "inline": True
                     },
                     {
-                        "name": "呼符", 
+                        "name": "Tickets",
                         "value": f"{rewards.ticket}",
                         "inline": True
                     },                    
                     {
-                        "name": "圣晶石",
+                        "name": "Saint Quartz",
                         "value": f"{rewards.stone}",
                         "inline": True
                     },
                     {
-                        "name": "圣晶片",
+                        "name": "IDK",
                         "value": f"{rewards.sqf01}",
                         "inline": True
                     },
                     {
-                        "name": "金苹果",
+                        "name": "goldenfruit",
                         "value": f"{rewards.goldenfruit}",
                         "inline": True
                     },
                     {
-                        "name": "银苹果",
+                        "name": "silverfruit",
                         "value": f"{rewards.silverfruit}",
                         "inline": True
                     },
                     {
-                        "name": "铜苹果",
+                        "name": "bronzefruit",
                         "value": f"{rewards.bronzefruit}",
                         "inline": True
                     },
                     {
-                        "name": "蓝苹果",
+                        "name": "bluebronzefruit",
                         "value": f"{rewards.bluebronzefruit}",
                         "inline": True
                     },
                     {
-                        "name": "蓝苹果树苗",
+                        "name": "bluebronzesapling",
                         "value": f"{rewards.bluebronzesapling}",
                         "inline": True
                     },
                     {
-                        "name": "连续登录天数",
+                        "name": "Login Days",
                         "value": f"{login.login_days}",
                         "inline": True
                     },
                     {
-                        "name": "累计登录天数",
+                        "name": "Total Days",
                         "value": f"{login.total_days}",
                         "inline": True
                     },
                     {
-                        "name": "白方块",
+                        "name": "pureprism",
                         "value": f"{rewards.pureprism}",
                         "inline": True
                     },
                     {
-                        "name": "友情点",
+                        "name": "Total Friend Points",
                         "value": f"{login.total_fp}",
                         "inline": True
                     },
                     {
-                        "name": "今天 获得的友情点",
+                        "name": "Friend Points Today",
                         "value": f"+{login.add_fp}",
                         "inline": True
                     },
                     {
-                        "name": "当前AP",
+                        "name": "AP Max",
                         "value": f"{login.remaining_ap}",
                         "inline": True
                     },
                     {
-                        "name": "圣杯",
+                        "name": "holygrail",
                         "value": f"{rewards.holygrail}",
                         "inline": True
                     },
@@ -149,13 +149,13 @@ def shop(item: str, quantity: str) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO自动购物系统 - " + main.fate_region,
-                "description": f"购买成功.",
+                "title": "FGO Daily Bonus - " + main.fate_region,
+                "description": f"Purchase successful.",
                 "color": 5814783,
                 "fields": [
                     {
-                        "name": f"商店",
-                        "value": f"消费 {40 * quantity}Ap 购买 {quantity}x {item}",
+                        "name": f"Store",
+                        "value": f"consume {40 * quantity}Ap Purchase {quantity}x {item}",
                         "inline": False
                     }
                 ],
@@ -202,12 +202,12 @@ def drawFP(servants, missions) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO自动抽卡系统 - " + main.fate_region,
-                "description": f"完成当日免费友情抽卡。列出抽卡结果.\n\n{message_mission}",
+                "title": "FGO Daily Bonus - " + main.fate_region,
+                "description": f"Scheluded Friend Point Fate/Grand Order.\n\n{message_mission}",
                 "color": 5750876,
                 "fields": [
                     {
-                        "name": "友情卡池",
+                        "name": "Gacha Result",
                         "value": f"{message_servant}",
                         "inline": False
                     }
@@ -250,12 +250,12 @@ def LTO_Gacha(servants) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO限定抽卡 - " + main.fate_region,
-                "description": f"完成限定友情抽卡。列出抽卡结果.",
+                "title": "FGO Limited Gacha - " + main.fate_region,
+                "description": f"Scheluded Limit Friend Point Fate/Grand Order.",
                 "color": 16711680,
                 "fields": [
                     {
-                        "name": "限定卡池",
+                        "name": "Gacha Result",
                         "value": f"{message_servant}",
                         "inline": False
                     }
@@ -282,8 +282,8 @@ def Present(name, namegift, object_id_count) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO兑换系统 - JP",
-                "description": "兑换成功",
+                "title": "FGO Exchange - JP",
+                "description": "Successful",
                 "color": 8388736,
                 "fields": [
                     {
